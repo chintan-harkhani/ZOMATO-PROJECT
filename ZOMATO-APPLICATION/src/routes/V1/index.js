@@ -2,6 +2,7 @@ const express = require("express");//third party pakaje
 
 //router require
 const UserRouter  = require("./user.router");
+const OwnerRouter  = require("./owner.route");
 const LoginRouter  = require("./login.router");
 const TokenRouter =require("./token.router");
 const CountryRouter = require("./country.router");
@@ -16,6 +17,7 @@ const router = express.Router(); //use the express router
 
 //route name create
 router.use("/user" , UserRouter);
+router.use("/owner" , OwnerRouter);
 router.use("/login" , LoginRouter);
 router.use("/token" , TokenRouter);
 router.use("/country" , CountryRouter);

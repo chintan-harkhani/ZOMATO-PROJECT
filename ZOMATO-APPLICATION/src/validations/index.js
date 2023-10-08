@@ -8,3 +8,4 @@ module.exports.BannerValidation =require("./banner.validation");
 module.exports.Restorant_typeValidation =require("./restorant_type.validation");
 module.exports.RestorantValidation =require("./restorant.validation");
 module.exports.FoodValidation =require("./food.validation");
+module.exports.OwnerValidation =require("./owner.validation");

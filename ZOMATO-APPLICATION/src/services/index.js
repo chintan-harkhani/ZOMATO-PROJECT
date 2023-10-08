@@ -2,6 +2,7 @@ module.exports.UserService = require("./user.service");
 module.exports.LoginService = require("./login.service");
 module.exports.TokenService = require("./token.service");
 module.exports.CountryService = require("./country.service");
+module.exports.OwnerService = require("./owner.service");
 module.exports.StateService = require("./state.service");
 module.exports.CityService = require("./city.service");
 module.exports.BannerService = require("./banner.service");

@@ -7,6 +7,7 @@ module.exports.Deliver_boy = require("./deliver_driver.model"); //
 module.exports.Food_order = require("./food_order.model"); //
 module.exports.Food = require("./food.model"); //yes
 module.exports.Location = require("./location.model"); //
+module.exports.Owner = require("./owner.model"); //yes
 module.exports.Login = require("./login.model"); //yes
 module.exports.Map = require("./map.model"); //
 module.exports.Menu = require("./menu.model"); //
