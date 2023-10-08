@@ -1,0 +1,22 @@
+//all Model export 
+module.exports.Banner = require("./banner.model"); // yes
+module.exports.City = require("./city.model"); //yes
+module.exports.Country = require("./country.model"); //yes
+module.exports.Coupan = require("./coupan.model"); //
+module.exports.Deliver_boy = require("./deliver_driver.model"); //
+module.exports.Food_order = require("./food_order.model"); //
+module.exports.Food = require("./food.model"); //yes
+module.exports.Location = require("./location.model"); //
+module.exports.Login = require("./login.model"); //yes
+module.exports.Map = require("./map.model"); //
+module.exports.Menu = require("./menu.model"); //
+module.exports.Payment = require("./payment.model"); //
+module.exports.Restorant = require("./restorant.model"); //yes
+module.exports.Restorant_type = require("./restorant_type.model"); //yes
+module.exports.State = require("./state.model"); //yes
+module.exports.Token = require("./token.model"); //yes
+module.exports.Total_order = require("./total_order.model"); //
+module.exports.User_favorite = require("./user_favorite.model"); //
+module.exports.Notification = require("./user_notification.model"); //
+module.exports.Review = require("./user_review.model"); //
+module.exports.User = require("./user.model"); //yes

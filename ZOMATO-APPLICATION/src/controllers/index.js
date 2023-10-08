@@ -1,0 +1,10 @@
+module.exports.UserController = require("./user.controller");
+module.exports.LoginController = require("./login.controller");
+module.exports.TokenController =require("./token.controller");
+module.exports.CountryController =require("./country.controller");
+module.exports.StateController =require("./state.controller");
+module.exports.CityController =require("./city.controller");
+module.exports.BannerController =require("./banner.controller");
+module.exports.Restorant_typeController  =require("./restorant_type.controller");
+module.exports.RestorantController  =require("./restorant.controller");
+module.exports.FoodController  =require("./food.controller");
