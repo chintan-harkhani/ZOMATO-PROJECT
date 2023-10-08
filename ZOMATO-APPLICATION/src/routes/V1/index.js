@@ -12,6 +12,7 @@ const BannerRouter = require("./banner.router");
 const Restorant_typeRouter = require("./restorant_type.router");
 const RestorantRouter = require("./restorant.router");
 const FoodRouter = require("./food.router");
+const MenuRouter = require("./menu.router");
 
 const router = express.Router(); //use the express router
 
@@ -27,5 +28,6 @@ router.use("/banner" , BannerRouter);
 router.use("/restorant_type" , Restorant_typeRouter);
 router.use("/restorant" , RestorantRouter);
 router.use("/food" , FoodRouter);
+router.use("/menu" , MenuRouter);
 
 module.exports = router; //router export

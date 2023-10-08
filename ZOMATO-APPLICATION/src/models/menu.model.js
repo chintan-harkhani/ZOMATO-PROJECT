@@ -1,4 +1,5 @@
 const mongoose = require("mongoose");
+const config =require("../config/config")
 // menu model schema defiend
 const MenuSchema = new mongoose.Schema(
     {
@@ -22,10 +23,6 @@ const MenuSchema = new mongoose.Schema(
             type: Number,
             trim: true,
         },
-        menu_category: {
-            type: String,
-            trim: true,
-        },
         restorant: {
             type: mongoose.Types.ObjectId,
              ref :"restorant",
@@ -42,6 +39,13 @@ const MenuSchema = new mongoose.Schema(
     {
         timestamps: true,
         versionKey: false,
+        toJSON :{
+            transform : function(doc ,data){
+               if(data?.menu_img){
+                   data.menu_img =`${config.base_url}Food_Images/${data.menu_img}`;
+               }
+            }
+       }
     },
 );
 // model create

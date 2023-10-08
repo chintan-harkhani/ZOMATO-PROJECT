@@ -8,4 +8,5 @@ module.exports.BannerController =require("./banner.controller");
 module.exports.Restorant_typeController  =require("./restorant_type.controller");
 module.exports.RestorantController  =require("./restorant.controller");
 module.exports.FoodController  =require("./food.controller");
+module.exports.MenuController  =require("./menu.controller");
 module.exports.OwnerController  =require("./owner.controller");

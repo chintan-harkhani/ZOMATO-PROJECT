@@ -9,3 +9,4 @@ module.exports.BannerService = require("./banner.service");
 module.exports.Restorant_typeService = require("./restorant_type.service");
 module.exports.RestorantService = require("./restorant.service");
 module.exports.FoodService = require("./food.service");
+module.exports.MenuService = require("./menu.service");
