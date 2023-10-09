@@ -1,5 +1,4 @@
 module.exports.UserValidation = require("./user.validation");
-module.exports.LoginValidation = require("./login.validation");
 module.exports.TokenValidation =require("./token.validation");
 module.exports.CountryValidation =require("./country.validation");
 module.exports.StateValidation =require("./state.validation");

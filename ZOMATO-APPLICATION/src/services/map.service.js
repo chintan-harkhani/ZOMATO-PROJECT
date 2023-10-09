@@ -5,7 +5,7 @@ const CreateMap = async (reqBody) => {
 };
 //Map list
 const MapList = async (req, res) => {
-    return Map.find()
+    return Map.find().populate("restorant",{restorant_name:1, restorant_contact:1, restorant_addres:1}).populate("location"  ,{address :1})
 };
 // Map id
 const MapId = async (mapId) => {

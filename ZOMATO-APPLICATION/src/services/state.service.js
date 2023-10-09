@@ -5,7 +5,10 @@ const CreateState = async (reqBody) => {
 };
 //state list
 const StateList = async (req, res) => {
-    return State.find()
+    return State.find().populate({
+         path : "country",
+         select : ["country_name"],
+    })
 };
 // State id
 const StateId = async (stateId) => {

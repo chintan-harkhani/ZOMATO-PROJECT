@@ -9,7 +9,17 @@ const CreateUser = {
         contact_no :joi.number().integer().min(10 ** 9).max(10 ** 10 - 1).required(),
         address  : joi.string().trim().required(),
         user_role  :  joi.string().valid('admin', 'user', 'super admin', 'diliver_boy' ).required(),
+        user_role  :  joi.string().trim().required(),
     })
+};
+//create user
+const CreateUsers = {
+  body :joi.object().keys({
+      user_name : joi.string().min(3).max(30) .required(),
+      email :joi.string().email().trim().required(),
+      password :joi.string().min(8).max(30).pattern(new RegExp('^(?=.*[A-Za-z])(?=.*\\d)(?=.*[@$!%*#?&])[A-Za-z\\d@$!%*#?&]+$')).required(),
+      user_role  :  joi.string().valid('admin', 'user', 'super admin', 'diliver_boy' ).required(),
+  })
 };
 
 const sendMail = {
@@ -22,5 +32,6 @@ const sendMail = {
 //module expoart
 module.exports = {
      CreateUser,
+     CreateUsers,
      sendMail
 }

@@ -6,7 +6,7 @@ const CreateMenu = async (reqBody) => {
 };
 //Menu list
 const MenuList = async (req, res) => {
-    return Menu.find()
+    return Menu.find().populate("food", { food_name: 1, food_desc: 1, food_offer: 1, food_type: 1, food_effect: 1, food_ratting: 1 }).populate("restorant", { restorant_name: 1, restorant_desc: 1, }).populate("type", { type_select: 1 })
 };
 // Menu id
 const MenuId = async (menuId) => {
@@ -20,10 +20,10 @@ const UpdateMenu = async (menuId, updateBody) => {
 const DeleteMenu = async (menuId) => {
     return Menu.findByIdAndDelete(menuId)
 };
-    //find  Menu
-    const FindMenuName = async (menu_name) => {
-        return Menu.findOne({menu_name});
-    }
+//find  Menu
+const FindMenuName = async (menu_name) => {
+    return Menu.findOne({ menu_name });
+}
 //module export
 module.exports = {
     CreateMenu,

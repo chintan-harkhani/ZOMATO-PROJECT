@@ -6,7 +6,7 @@ const CreateReview = async (reqBody)=>{
 };
 //user Review list
 const ReviewList  =async (req ,res) =>{
-       return Review.find()
+       return Review.find().populate("user", {user_name:1,email:1}).populate("restorant" ,{restorant_name:1,})
 };
 // user Review id
 const ReviewId = async ( reviewId)=>{

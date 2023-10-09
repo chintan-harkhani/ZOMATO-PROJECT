@@ -6,7 +6,7 @@ const CreateBanner = async (reqBody) => {
 };
 //Banner list
 const BannerList = async (req, res) => {
-    return Banner.find()
+    return Banner.find().populate("city", { city_name:1})
 };
 // Banner id
 const BannerId = async (bannerId) => {

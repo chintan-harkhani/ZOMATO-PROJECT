@@ -6,7 +6,7 @@ const CreateRestorant = async (reqBody) => {
 };
 //Restorant list
 const RestorantList = async (req, res) => {
-    return Restorant.find()
+    return Restorant.find().populate("restorant_type", {type_select:1}).populate("city", {city_name:1}).populate("state", {state_name:1}).populate("country" ,{country_name:1}).populate("user", {user_name:1,email:1, contact_no:1 })
 };
 // Restorant id
 const RestorantId = async (restorantId) => {

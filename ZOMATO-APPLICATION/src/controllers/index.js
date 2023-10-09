@@ -1,5 +1,4 @@
 module.exports.UserController = require("./user.controller");
-module.exports.LoginController = require("./login.controller");
 module.exports.TokenController =require("./token.controller");
 module.exports.CountryController =require("./country.controller");
 module.exports.StateController =require("./state.controller");

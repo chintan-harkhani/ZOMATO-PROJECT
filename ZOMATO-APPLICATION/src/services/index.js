@@ -1,5 +1,4 @@
 module.exports.UserService = require("./user.service");
-module.exports.LoginService = require("./login.service");
 module.exports.TokenService = require("./token.service");
 module.exports.CountryService = require("./country.service");
 module.exports.OwnerService = require("./owner.service");

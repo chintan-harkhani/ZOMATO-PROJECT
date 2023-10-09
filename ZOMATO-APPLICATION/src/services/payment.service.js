@@ -6,7 +6,7 @@ const CreatePayment = async (reqBody)=>{
 };
 //Payment list
 const PaymentList  =async (req ,res) =>{
-       return Payment.find()
+       return Payment.find().populate("order",{orde_total_price:1,order_Date:1}).populate("menu", {menu_img:1,menu_name:1,menu_price:1})
 };
 // Payment id
 const PaymentId = async ( paymentId)=>{

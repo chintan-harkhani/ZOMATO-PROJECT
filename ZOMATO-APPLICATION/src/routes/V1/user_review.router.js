@@ -1,14 +1,14 @@
 const { ReviewController } = require("../../controllers");
 const express = require("express");
 const validate = require("../../middlewares/validate");
-const auth = require("../../middlewares/auth")
+// const auth = require("../../middlewares/auth")
 const { ReviewValidation } = require("../../validations");
 const router = express.Router();
 
 //create Review
 router.post("/create_review",
     validate(ReviewValidation.CreateReview),
-    auth(),
+    // auth(),
     ReviewController.CreateReview
 );
 //Review list

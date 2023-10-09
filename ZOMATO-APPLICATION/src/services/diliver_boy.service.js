@@ -6,7 +6,7 @@ const CreateDeliverboy = async (reqBody) => {
 };
 //Deliver_boy list
 const DeliverboyList = async (req, res) => {
-    return Deliver_boy.find()
+    return Deliver_boy.find().populate("user" ,{user_name :1 ,email:1, contact_no:1,user_role:1})
 };
 // Deliver_boy id
 const DeliverboyId = async (boyId) => {

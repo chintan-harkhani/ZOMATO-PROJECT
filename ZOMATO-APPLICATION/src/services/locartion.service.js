@@ -5,7 +5,10 @@ const CreateLocation = async (reqBody) => {
 };
 //Location list
 const LocationList = async (req, res) => {
-    return Location.find()
+    return Location.find().populate({
+        path : "country",
+        select : ["country_name"],
+    }).populate("state" , {state_name :1}).populate("city" ,{city_name:1})
 };
 // Location id
 const LocationId = async (locationId) => {

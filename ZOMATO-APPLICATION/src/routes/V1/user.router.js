@@ -5,6 +5,19 @@ const auth = require("../../middlewares/auth")
 const { UserValidation } = require("../../validations");
 const router = express.Router();
 
+//register
+router.post("/register" ,
+validate(UserValidation.CreateUsers),
+UserController.register
+)
+//login
+router.post("/login" ,
+UserController.login
+)
+//user all list
+router.get("/userall" ,
+UserController.getAllUser
+)
 //create User
 router.post("/create_user",
     validate(UserValidation.CreateUser),

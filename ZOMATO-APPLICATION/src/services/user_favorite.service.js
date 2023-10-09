@@ -6,7 +6,7 @@ const Createfavorite = async (reqBody)=>{
 };
 //User_favorite list
 const FavoriteList  =async (req ,res) =>{
-       return User_favorite.find()
+       return User_favorite.find().populate("food" ,{food_name:1 , food_desc:1, food_type:1,food_effect:1}).populate("restorant" ,{restorant_name:1,}).populate("user", {user_name:1});
 };
 // User_favorite id
 const FavoriteId = async ( favoriteId)=>{

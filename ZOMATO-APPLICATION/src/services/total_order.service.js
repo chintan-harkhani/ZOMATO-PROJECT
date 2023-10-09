@@ -6,7 +6,7 @@ const CreateTotalorder = async (reqBody) => {
 };
 //Total_order list
 const TotalorderList = async (req, res) => {
-    return Total_order.find()
+    return Total_order.find().populate("order",{orde_total_price:1,order_Date:1}).populate("menu", {menu_img:1,menu_name:1,menu_price:1})
 };
 // Total_order id
 const TotalorderId = async (totalorderId) => {
