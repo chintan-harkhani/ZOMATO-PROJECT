@@ -13,7 +13,6 @@ const UserReviewSchema = new mongoose.Schema(
         ratting : {
              type : Number,
              trim : true,
-             default : 0
         },
         review_text :{
              type : String,

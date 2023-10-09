@@ -3,11 +3,11 @@ const mongoose = require("mongoose");
 const CoupanSchema = new mongoose.Schema(
     {
          coupancode :{
-             type :String,
+             type :Number,
              trim :true,
          },
          discount :{
-             type :String,
+             type :Number,
              trim :true,
          },
         expire_date :{

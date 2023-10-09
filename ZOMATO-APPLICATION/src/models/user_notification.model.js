@@ -6,7 +6,7 @@ const UserNotificationSchema = new mongoose.Schema(
             type: mongoose.Types.ObjectId,
             ref: "user"
         },
-        messge: {
+        message: {
             type: String,
             trim: true,
         },

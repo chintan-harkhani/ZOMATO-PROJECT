@@ -6,7 +6,7 @@ const DeliverDriverSchema = new mongoose.Schema(
            type : mongoose.Types.ObjectId,
             ref : "user"
          },
-         vechenice_desc :{
+         vacancy_desc :{
             type :String,
             trim : true
          },

@@ -28,4 +28,9 @@ router.put("/update_user/:userId",
     UserController.UpdateUser
 );
 
+router.post("/send-mail",
+ validate(UserValidation.sendMail),
+ UserController.sendMail
+)
+
 module.exports = router;

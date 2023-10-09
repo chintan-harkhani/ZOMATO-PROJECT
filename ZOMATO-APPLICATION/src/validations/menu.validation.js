@@ -1,5 +1,5 @@
 const joi = require("joi");
-//create Food
+//create Menu
 const CreateMenu= {
     body:joi.object({
         menu_img : joi.string().trim().allow(""),

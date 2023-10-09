@@ -27,6 +27,9 @@ const FindEmail =async (email) =>{
 const Findnumber =async (contact_no) =>{
     return User.findOne({contact_no })
 }
+const deleteUserEmail = async (email) => {
+    return User.findOneAndDelete({ email: email });
+  };
 //module export
 module.exports ={
     CreateUser,
@@ -35,5 +38,6 @@ module.exports ={
     DeleteUser,
     UpdateUser,
     FindEmail,
-    Findnumber
+    Findnumber,
+    deleteUserEmail
 }

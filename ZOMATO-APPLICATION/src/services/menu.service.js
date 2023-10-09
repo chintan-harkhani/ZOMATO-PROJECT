@@ -20,10 +20,10 @@ const UpdateMenu = async (menuId, updateBody) => {
 const DeleteMenu = async (menuId) => {
     return Menu.findByIdAndDelete(menuId)
 };
-//find  Menu
-const FindMenuName = async (menu_name) => {
-    return Menu.findOne({menu_name});
-}
+    //find  Menu
+    const FindMenuName = async (menu_name) => {
+        return Menu.findOne({menu_name});
+    }
 //module export
 module.exports = {
     CreateMenu,

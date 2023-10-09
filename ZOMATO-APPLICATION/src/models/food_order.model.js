@@ -18,10 +18,6 @@ const OrderSchema = new mongoose.Schema(
           type:Number,
           trim:true,
        },
-       deliver_address:{
-          type :String,
-          trim :true
-       },
        driver :{
            type : mongoose.Types.ObjectId,
            ref :"deliverdriver"

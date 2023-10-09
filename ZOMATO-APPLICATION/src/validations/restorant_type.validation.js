@@ -1,6 +1,6 @@
 const joi = require("joi");
 
-/** create country */
+/** create Restorant Type */
 const CreateRestorant_type= {
   body: joi.object().keys({
     type_select :joi.string().valid(
